@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 110px;
+    width: 100%;
+    background-color: #0c3c60;
+} 
+
+header img {
+    height: 90px;
+    margin: 10px;
+    float: left;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 25px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Desktop mode: hide the mobile version */
+header .mobile {
+    display: none; 
+}
+
+/* Mobile mode: replace desktop */
+@media only screen and (max-width: 860px) {
+    header .desktop {
+        display: none;
+    }
+    header .mobile {
+        display: block;
+    }
+
+    .header-logo-short {
+        width: 35px;
+        height: 35px;
+        float: left;
+        padding-top: 25px;
+        padding-left: 25px;
+    }
+
+    nav {
+        padding-right: 23px;
+    }
+    
+}
+
+/* Mission */
+
+#mission {
+    height: 600px;
+    width: auto;
+    background-image: url(images/London-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.statement {
+    background-color: #0c3c60;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+}
+
+/* Services */
+
+.spacer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#services {
+    background-color: #d1dfeb;
+    color: #0c3c60;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.service {
+    height: 350px;
+    width: 350px;
+}
+
+.service img {
+    height: 200px;
+    width: 250px;
+}
+
+#services-heading {
+    padding: 20px;
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* Enables images to wrap to the next row */
+    justify-content: space-evenly;
+}
+
+.col {
+    display: inline-flex;
+    flex-direction: column;
+    /* Enables images to wrap to the next row */
+    justify-content: space-between;
+}
+
+/* Team */
+
+#team {
+    color: #0c3c60;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#team-heading {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#team figure img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #0c3c60;
+}
+
+.team-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.team-col figure {
+    margin-top: 20px;
+}
+
+.team-col figcaption {
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0c3c60;
+    height: 110px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
